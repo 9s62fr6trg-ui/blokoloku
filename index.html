@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>BlokuLoku (mini)</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#111111" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">BlokuLoku (mini)</div>
+    <div class="scores">
+      <div>Score <span id="score">0</span></div>
+      <div>Best <span id="best">0</span></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="board" aria-label="Grille 9 par 9">
+      <div id="grid" class="grid" role="grid" aria-label="Grille"></div>
+    </section>
+
+    <section class="tray" aria-label="Pièces">
+      <div class="trayHeader">
+        <div id="hint" class="hint">Sélectionne une pièce, puis tape une case.</div>
+        <button id="newGame" class="btn">Nouvelle partie</button>
+      </div>
+      <div id="pieces" class="pieces"></div>
+      <div id="status" class="status"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
